@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.nav {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar a {
+    font-size: larger;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.logo {
+    width: 50px;
+}
+
+input {
+    width: 400px;
+    height: 30px;
+}
+
+button {
+    background-color: #ffc107;
+    color: #333;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.header {
+    background-color: #4CAF50;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+}
+
+.home1 {
+    margin: 10px;
+}
+
+.home2 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.home1 img {
+    max-width: 850px;
+    padding: 10px;
+}
+
+.home2 img {
+    max-width: 450px;
+    padding: 10px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.popular-category div {
+    text-align: center;
+    margin: 50px;
+    max-width: 250px;
+}
+
+.popular-category img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.popular-category p {
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid;
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .header {
+        flex-direction: column;
+        width: 40%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .header a {
+        padding: 5px;
+    }
+
+    input {
+        width: 40%;
+        margin-top: 10px;
+    }
+
+    .home2 {
+        margin-top: 20px;
+    }
+
+    .popular-category div {
+        margin: 20px;
+    }
+
+    .home1 img {
+        max-width: 430px;
+    }
+}
